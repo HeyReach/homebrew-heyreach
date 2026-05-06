@@ -11,7 +11,7 @@ class Heyreach < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.0/heyreach_darwin_amd64.tar.gz"
-      sha256 "02ec62e404c4499e3da287510e616b53ad9509827c99c3156541ea4e7557c7a3"
+      sha256 "92c48201b526477d2f3e4d419725773ab60370436a14335d15da9d42a6211d67"
 
       define_method(:install) do
         bin.install "heyreach"
@@ -19,7 +19,7 @@ class Heyreach < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.0/heyreach_darwin_arm64.tar.gz"
-      sha256 "8c7dbb042dd6a70d77e56ad54fc7a2f6f57f52fdc428e6c5fc3949215d0c2484"
+      sha256 "2abc9cee2fb251ec6f90201fca0ec0c7fd4275fe88f27b08cdee7c13c8fe9cef"
 
       define_method(:install) do
         bin.install "heyreach"
@@ -30,14 +30,14 @@ class Heyreach < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.0/heyreach_linux_amd64.tar.gz"
-      sha256 "4d568044de60ec399efda86ac34a5f62b1e556f989536461d2fa4838cce31c40"
+      sha256 "8fdab4f072c9a2a2f0dfeba61a55ee83f0f8056367f11afdbc7bbfc1c67f5418"
       define_method(:install) do
         bin.install "heyreach"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.0/heyreach_linux_arm64.tar.gz"
-      sha256 "21989843cf4294df71d3c3519b7dea3651647388a377a4409c88bad4ba192b1a"
+      sha256 "2fc9de3fee5860ed032e78f5a46a501e2170e3bb162b870f217040e007db4fef"
       define_method(:install) do
         bin.install "heyreach"
       end
