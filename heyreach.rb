@@ -5,21 +5,21 @@
 class Heyreach < Formula
   desc "CLI for HeyReach LinkedIn outreach automation"
   homepage "https://heyreach.io"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.0/heyreach_darwin_amd64.tar.gz"
-      sha256 "92c48201b526477d2f3e4d419725773ab60370436a14335d15da9d42a6211d67"
+      url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.1/heyreach_darwin_amd64.tar.gz"
+      sha256 "7bc3ed5cd0737d24284a55ad17b73d747de8068a5fd19c5e1be212fa2dae565d"
 
       define_method(:install) do
         bin.install "heyreach"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.0/heyreach_darwin_arm64.tar.gz"
-      sha256 "2abc9cee2fb251ec6f90201fca0ec0c7fd4275fe88f27b08cdee7c13c8fe9cef"
+      url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.1/heyreach_darwin_arm64.tar.gz"
+      sha256 "d044c04d4668d50498c1c54c0c0a8d0cb532d4ba6d6e6c3f331087bdbe257af4"
 
       define_method(:install) do
         bin.install "heyreach"
@@ -29,15 +29,15 @@ class Heyreach < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.0/heyreach_linux_amd64.tar.gz"
-      sha256 "8fdab4f072c9a2a2f0dfeba61a55ee83f0f8056367f11afdbc7bbfc1c67f5418"
+      url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.1/heyreach_linux_amd64.tar.gz"
+      sha256 "026e5634941535e8859cb648c4ecfd92bed5fa8027f7e0e4c680f50860c6793e"
       define_method(:install) do
         bin.install "heyreach"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.0/heyreach_linux_arm64.tar.gz"
-      sha256 "2fc9de3fee5860ed032e78f5a46a501e2170e3bb162b870f217040e007db4fef"
+      url "https://github.com/heyreach/heyreach-cli-releases/releases/download/v1.0.1/heyreach_linux_arm64.tar.gz"
+      sha256 "640864d93c77dce6cfbbd320b8089e1c56029005b884129876cc4e5ab970bde4"
       define_method(:install) do
         bin.install "heyreach"
       end
